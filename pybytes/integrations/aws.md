@@ -3,6 +3,8 @@
 Whenever one of your integrated devices sends a message to our broker, we republish the binary payload to the endpoint specified for its integration.
 In order to save the data received by AWS, [you must set up a rule](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules.html). You can also test that everything's working with the [AWS IoT MQTT client](https://docs.aws.amazon.com/iot/latest/developerguide/view-mqtt-messages.html).
 
+**Warning**: do not delete AWS things or groups directly from AWS user interface, otherwise the integration with Pybytes will stop working. Always use Pybytes interface to delete AWS things or groups.
+
 ## Integrate your devices
 
 1. Go in the sidebar, click on _New Integration_ and then on _Amazon Web Services_
